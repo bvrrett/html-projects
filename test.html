@@ -10,10 +10,10 @@
 	<div id="wrapper2">
 		<nav>
 			<div id="left">
-				<a href="http://instagram.com/sbvrrett/">insta</a>
+				<a href="file:///C:/Users/barre/Desktop/test.html">home</a>
 			</div>
 			<div id="second">
-				link2
+				<a href="file:///C:/Users/barre/Desktop/test2.html">about</a>
 			</div>
 			<div id="third">
 				link3
@@ -21,20 +21,36 @@
 		</nav>
 	</div>
 
-	<div id="wrapper">
-		<div id="leftcolumn">
-			Left
-		</div>
+	<div class="row">
+		<div class="column" id="leftcol">
+			
 		
-		<div id="rightcolumn">
-			Right
 		</div>
-
+		<div class="column" id="middlecol">
+			
+		</div>
+		<div class="column" id="rightcol">
+			 	<img class="mySlides w3-animate-fading" src="https://scontent-lax3-2.cdninstagram.com/vp/82b67a12a37a8269f535292ba2b6b9cc/5CD43D7C/t51.2885-15/e35/47583937_322263408377921_8978207825695057206_n.jpg?_nc_ht=scontent-lax3-2.cdninstagram.com" style="width:100%">
+  				<img class="mySlides w3-animate-fading" src="https://scontent-lax3-2.cdninstagram.com/vp/76db0780f6303c40069abbf19ec9f546/5CD0D90B/t51.2885-15/e35/46932844_292928444760917_5691324189751300485_n.jpg?_nc_ht=scontent-lax3-2.cdninstagram.com" style="width:100%">
+  				<img class="mySlides w3-animate-fading" src="https://scontent-lax3-2.cdninstagram.com/vp/0e2d6e8b2bb1d1ef4d0974883fa03f1c/5CD3399E/t51.2885-15/e35/47445408_124220541926562_1791227470258702623_n.jpg?_nc_ht=scontent-lax3-2.cdninstagram.com" style="width:100%">
+		</div>
 	</div>
-	<div id ="center">
-			Paragraph
-	</div>
+<script>
+var myIndex = 0;
+carousel();
 
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 7000);    
+}
 
+</script>
 </body>
 </html>
